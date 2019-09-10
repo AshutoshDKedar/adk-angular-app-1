@@ -1,0 +1,33 @@
+<div class="ema-cmp-register row">
+        <h5 class="text-left">Regiter Yourself :</h5>
+        <!--<form class="form-inline" [formGroup]="angForm" novalidate>-->
+            <div class="input-group">
+                <input class="form-control" type="text" placeholder="Username" #txtUsername >
+            </div>
+            <!--<div *ngIf="angForm.controls['txtUsername'].invalid && (angForm.controls['txtUsername'].dirty || angForm.controls['txtUsername'].touched)" class="alert alert-danger">
+                <div *ngIf="angForm.controls['txtUsername'].errors.required">
+                    Username is required.
+                </div>
+            </div>-->
+            <br/>
+            <div class="input-group">
+                <input class="form-control" type="password" placeholder="Password" #txtPassword >
+            </div>
+            <!--<div *ngIf="angForm.controls['txtPassword'].invalid && (angForm.controls['txtPassword'].dirty || angForm.controls['txtPassword'].touched)" class="alert alert-danger">
+                    <div *ngIf="angForm.controls['txtPassword'].errors.required">
+                        Password is required.
+                    </div>
+                </div>-->
+            <br/>
+            <div class="input-group">
+                <input class="form-control" type="password" placeholder="Confirm Password" #txtConfirmPassword >
+            </div>
+            <!--<div *ngIf="angForm.controls['txtConfirmPassword'].invalid && (angForm.controls['txtConfirmPassword'].dirty || angForm.controls['txtConfirmPassword'].touched)" class="alert alert-danger">
+                    <div *ngIf="angForm.controls['txtConfirmPassword'].errors.required">
+                        Confirm Password is required.
+                    </div>
+                </div>-->
+            <br/>
+            <input class="form-control btn btn-info" type="submit" value="Register" (click)="registerUser(txtUsername.value, txtPassword.value)">
+        <!--</form>-->
+    </div>

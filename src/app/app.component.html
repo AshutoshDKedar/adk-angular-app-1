@@ -1,0 +1,18 @@
+<ng2-slim-loading-bar color="blue"></ng2-slim-loading-bar>
+
+<div class="jumbotron">
+  <h1 class="text-center">{{ title }}</h1>
+</div>
+
+<div class="ema-cmp-navigation">
+  <ul class="nav nav-pills justify-content-center">
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['/register']" routerLinkActive="active">Register</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['/login']" routerLinkActive="active">Login</a>
+    </li>
+  </ul>
+</div>
+  
+<router-outlet></router-outlet>
